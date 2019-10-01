@@ -3,5 +3,3 @@ ports:
   - port: 5900
   - port: 35900
   - port: 6080
-tasks:
-  - command: pip3 install -r requirements.txt
