@@ -5,3 +5,7 @@ ports:
   - port: 6080
 tasks:
   - init: python3 setup.py install
+
+vscode:
+  extensions:
+    - ms-python.anaconda-extension-pack@1.0.1:zDfOOe7FoQk40SnrhxWS5g==
