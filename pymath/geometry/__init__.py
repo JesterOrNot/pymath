@@ -1,2 +1,2 @@
 import pymath.geometry.area
-from .pytbagTheor import pythag_theor
+from .pythagTheor import pythag_theor
