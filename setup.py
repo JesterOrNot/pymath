@@ -15,9 +15,9 @@ from setuptools import find_packages, setup, Command
 # Package meta-data.
 NAME = 'pymath'
 DESCRIPTION = 'My short description for my project.'
-URL = 'https://github.com/me/myproject'
-EMAIL = 'me@example.com'
-AUTHOR = 'Awesome Soul'
+URL = 'https://github.com/JeserOrNot/pymath'
+EMAIL = 'seanhellum45@gmail.com'
+AUTHOR = 'Sean Hellum'
 REQUIRES_PYTHON = '>=3.6.0'
 VERSION = '0.1.0'
 
