@@ -1,4 +1,6 @@
+"""  Module for logs """
 def log(base,awnser,ex):
+    """ I solve logarithms """
     if awnser == 1:
         return 0
     if base < 0 and awnser > 0:
