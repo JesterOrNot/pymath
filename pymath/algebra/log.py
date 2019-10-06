@@ -2,7 +2,7 @@
 
 
 def log(base, awnser):
-    """I solve logarithms"""
+    """Solves logarithms."""
     if awnser == 1:
         return 0
     if base < 0 and awnser > 0:
