@@ -1,5 +1,5 @@
 """  Module for logs """
-def log(base,awnser):
+def log(base, awnser):
     """ I solve logarithms """
     if awnser == 1:
         return 0
@@ -8,7 +8,7 @@ def log(base,awnser):
     result = 0
     exponent = 0
     while result != awnser:
-        exponent +=1
+        exponent += 1
         result = base**exponent
         if result == awnser:
             return exponent
