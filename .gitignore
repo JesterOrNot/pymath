@@ -106,3 +106,4 @@ venv.bak/
 # IDE
 .theia/
 .vscode/
+node_modules/
