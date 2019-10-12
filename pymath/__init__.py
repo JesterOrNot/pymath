@@ -5,4 +5,6 @@ import pymath.geometry
 import pymath.chemistry
 import pymath.misc
 def unitConverter(original,translated):
-    print("Welcome to the unit converter")
+    if original == "c" and translated == "f":
+        f = original * 1.8000 + 32
+        print(f"{f}° F")
