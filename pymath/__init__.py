@@ -1,4 +1,4 @@
-"""  Main pymath module """
+"""Main pymath module"""
 import pymath.algebra
 import pymath.physics
 import pymath.geometry
