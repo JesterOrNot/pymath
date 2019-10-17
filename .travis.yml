@@ -3,5 +3,4 @@ services:
   - docker
 script:
   - docker build -f Dockerfile .
-script:
   - python3 setup.py install
