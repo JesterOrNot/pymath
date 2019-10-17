@@ -1,6 +1,9 @@
 language: python
 services:
   - docker
+os:
+  - linux
+  - osx
 script:
   - docker build -f Dockerfile .
   - python3 setup.py install
