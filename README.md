@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/JesterOrNot/pymath.svg?branch=master)](https://travis-ci.com/JesterOrNot/pymath)
 # pymath
 Extension to the default math module
 ``` python
