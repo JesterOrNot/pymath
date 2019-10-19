@@ -26,6 +26,7 @@ script:
 deploy:
   provider: releases
   file: "Dockerfile"
+  api_key: "84g_OIYnVaKxBGib99K3ww"
   skip_cleanup: true
 
 after_success:
