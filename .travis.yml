@@ -1,42 +1,31 @@
 language: python
-
 services:
-  - docker
-
+- docker
 os:
-  - linux
-  - osx
-  - windows
-
+- linux
+- osx
+- windows
 jobs:
   allow_failures:
-    - os: osx
-    - os: windows
-
+  - os: osx
+  - os: windows
 install:
-  - pip3 install codecov pytest
-
+- pip3 install codecov pytest
 script:
-  - docker build -f Dockerfile .
-  - python3 setup.py install
-  - bash setup.sh
-  - javac buttonInstall.java
-  - coverage run tests/test.py
-before_install:
-  - openssl aes-256-cbc -K $encrypted_bde640882ab2_key -iv $encrypted_bde640882ab2_iv -in github_deploy_key.enc -out github_deploy_key -d
+- docker build -f Dockerfile .
+- python3 setup.py install
+- bash setup.sh
+- javac buttonInstall.java
+- coverage run tests/test.py
 deploy:
   provider: releases
-  file: "Dockerfile"
-  api_key: "84g_OIYnVaKxBGib99K3ww"
+  file: Dockerfile
   skip_cleanup: true
-
 after_success:
-  - codecov
-  # Generate coverage report in xml format
-  - coverage xml
-
-  # Install deepsource CLI
-  - curl https://deepsource.io/cli | sh
-
-  # Report coverage artifact to 'test-coverage' analyzer
-  - ./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage.xml
+- codecov
+- coverage xml
+- curl https://deepsource.io/cli | sh
+- "./bin/deepsource report --analyzer test-coverage --key python --value-file ./coverage.xml"
+before_install:
+- openssl aes-256-cbc -K $encrypted_bde640882ab2_key -iv $encrypted_bde640882ab2_iv
+  -in github_deploy_key.enc -out github_deploy_key -d
