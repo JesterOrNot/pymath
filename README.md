@@ -16,3 +16,6 @@ python3 setup.py Install
 git clone https://github.com/JesterOrNot/pymath.git
 bash setup.sh
 ```
+
+## Open in Gitpod
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/pymath)
