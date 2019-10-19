@@ -28,7 +28,6 @@ tasks:
   - prebuild: python3 setup.py install
     prebuild: npm i -g bash-language-server
     prebuild: pip install pytest pytest-cov
-#     prebuild: pytest --cov=./
 vscode:
     extensions:
       - ms-python.anaconda-extension-pack@1.0.1:zDfOOe7FoQk40SnrhxWS5g==
