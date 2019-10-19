@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/JesterOrNot/pymath.svg?branch=master)](https://travis-ci.com/JesterOrNot/pymath)
+[![codecov](https://codecov.io/gh/JesterOrNot/pymath/branch/master/graph/badge.svg)](https://codecov.io/gh/JesterOrNot/pymath)
 # pymath
 Extension to the default math module
 ``` python
