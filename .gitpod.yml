@@ -4,7 +4,7 @@ ports:
   - port: 35900
   - port: 6080
 tasks:
-  - init: python3 setup.py install
+  - prebuild: python3 setup.py install
   - init: npm i -g bash-language-server
 vscode:
   extensions:
