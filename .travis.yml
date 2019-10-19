@@ -27,8 +27,6 @@ deploy:
   provider: releases
   file: "Dockerfile"
   skip_cleanup: true
-  on:
-    tags: true
 
 after_success:
   - codecov
