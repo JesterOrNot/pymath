@@ -26,7 +26,7 @@ script:
 deploy:
   provider: releases
   api_key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
+  file: "Dockerfile"
   skip_cleanup: true
   on:
     tags: true
