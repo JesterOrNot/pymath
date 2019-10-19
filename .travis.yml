@@ -12,13 +12,16 @@ jobs:
   allow_failures:
     - os: osx
     - os: windows
+
 install:
   - pip3 install codecov pytest
+
 script:
   - docker build -f Dockerfile .
   - python3 setup.py install
   - bash setup.sh
   - javac buttonInstall.java
   - coverage run tests/test.py
+
 after_success:
   - codecov
