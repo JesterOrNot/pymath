@@ -12,16 +12,27 @@ int main() {
         cout << "Welcome to the algebra part of pymath available calculators include logorithm calc(log), and quadratic equation calc(quad)!\nWhich do you want?: ";
         cin >> input1;
         if (input1 == "log") {
-            string base;
-            string result;
+            string base, result;
             cout << "What is the base number?: ";
             cin >> base;
             cout << "What is the result?: ";
             cin >> result;
             ofstream outfile;
-            outfile.open("app/output.txt");
+            outfile.open("app/data/output.txt");
             outfile << base << endl << result << endl;
             system("python3 app/lib/logexe.py < app/output.txt");
+        } else if (input1 == "quad") {
+            string a,b,c;
+            cout << "What is a?: ";
+            cin >> a;
+            cout << "What is b?: ";
+            cin >> b;
+            cout << "What is c?: ";
+            cin >> c;
+            ofstream outfile;
+            outfile.open("app/data/output.txt");
+            outfile << a << endl << b << endl << c << endl;
+            system("python3 app/lib/quadexe.py < app/data/output.txt");
         }
     }
 }
