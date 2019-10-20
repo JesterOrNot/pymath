@@ -1,4 +1,4 @@
- 
+
 language: python
 services:
 - docker
@@ -13,7 +13,7 @@ jobs:
 install:
 - pip3 install codecov pytest
 script:
-- docker build -f Dockerfile .
+- docker build -f docker/Dockerfile .
 - docker build -f .gitpod.dockerfile .
 - python3 setup.py install
 - bash setup.sh
