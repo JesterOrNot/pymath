@@ -26,6 +26,7 @@ script:
 - docker build -f .gitpod.dockerfile .
 - python3 setup.py install
 - bash setup.sh
+- g++ app/main.cpp
 - javac buttonInstall.java
 - coverage run tests/test.py
 after_success:
