@@ -1,6 +1,12 @@
 """Testing for pymath."""
 from pymath.algebra import log as log
 from pymath.algebra import quad as quad
+from pymath.geometry import circumference as circumference
+import unittest
+
+class TestGeom(unittest.TestCase):
+    def test_circ(self):
+        self.assertEqual(circumference(5), 15.707963267948966)
 
 
 def test_log():
@@ -20,4 +26,5 @@ def test_quad():
 if __name__ == "__main__":
     test_log()
     test_quad()
+    unittest.main()
     print("Everything passed!")
