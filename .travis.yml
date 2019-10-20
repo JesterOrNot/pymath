@@ -1,4 +1,4 @@
- 
+
 language: python
 services:
 - docker
@@ -16,8 +16,8 @@ script:
 - docker build -f Dockerfile .
 - docker build -f .gitpod.dockerfile .
 - python3 setup.py install
-- bash setup.sh
-- javac buttonInstall.java
+- bash setup/setup.sh
+- javac setup/buttonInstall.java
 - coverage run tests/test.py
 after_success:
 - codecov
