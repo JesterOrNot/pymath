@@ -14,6 +14,7 @@ def test_quad():
     """Tests pymath.algebra.quad."""
     assert quad(1, 3, 2) == (-1.0, -2.0), "Should be (-1.0, -2.0)"
     assert quad(1, 3, -4) == (1.0, -4.0), "Should be (1.0, -4.0)"
+    assert quad(2, 4, -6) == (4.0, -12.0), "Should be (4.0, -12.0)" 
 
 
 if __name__ == "__main__":
