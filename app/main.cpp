@@ -21,7 +21,7 @@ int main() {
             ofstream outfile;
             outfile.open("app/output.txt");
             outfile << base << endl << result << endl;
-            system("python3 app/logexe.py < app/output.txt");
+            system("python3 app/lib/logexe.py < app/output.txt");
         }
     }
 }
