@@ -34,5 +34,18 @@ int main() {
             outfile << a << endl << b << endl << c << endl;
             system("python3 app/lib/quadexe.py < app/data/output.txt");
         }
+    } else if (input == "geometry") {
+        string input1;
+        cout << "Welcome to the geometry part of pymath available calculators include circumfrence calculator(circ), pythagorean theorem calc(pythag), area calc(area)\nWhich do you want?: ";
+        cin >> input1;
+        if (input1 == "circ") {
+            string circumfrence;
+            cout << "What is the diameter?: ";
+            cin >> circumfrence;
+            ofstream outfile;
+            outfile.open("app/data/output.txt");
+            outfile << circumfrence << endl;
+            system("python3 app/lib/circexe.py < app/data/output.txt");
+        }
     }
 }
