@@ -19,9 +19,9 @@ int main() {
             cout << "What is the result?: ";
             cin >> result;
             ofstream outfile;
-            outfile.open("output.txt");
+            outfile.open("app/output.txt");
             outfile << base << endl << result << endl;
-            system("python3 app/logexe.py < output.txt");
+            system("python3 app/logexe.py < app/output.txt");
         }
     }
 }
