@@ -145,6 +145,16 @@ namespace pymath {
             outfile.open("app/data/output.txt");
             outfile << radius << endl << time << endl << cycles << endl;
             system("python3 app/lib/tanaccexe.py < app/data/output.txt");
+        } else if (input == "velocity") {
+            string displacement,speed;
+            cout << "What is the displacement?: ";
+            cin >> displacement;
+            cout << "What is the speed?: ";
+            cin >> speed;
+            ofstream outfile;
+            outfile.open("app/data/output.txt");
+            outfile << displacement << endl << speed << endl;
+            system("python3 app/lib/velexe.py < app/data/output.txt");
         }
     }
 }
