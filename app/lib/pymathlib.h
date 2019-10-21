@@ -97,6 +97,18 @@ namespace pymath {
         cin >> input;
         if (input == "acc") {
             string v1,v2,t1,t2;
+            cout << "What is the initial velocity?: ";
+            cin >> v1;
+            cout << "What is the final velocity?: ";
+            cin >> v2;
+            cout << "What is the initial time?: ";
+            cin >> t1;
+            cout << "What is the final time?: ";
+            cin >> t2;
+            ofstream outfile;
+            outfile.open("app/data/output.txt");
+            outfile << v1 << endl << v2 << endl << t1 << endl << t2 << endl;
+            system("python3 app/lib/accexe.py < app/data/output.txt");
         }
     }
 }
