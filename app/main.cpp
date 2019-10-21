@@ -46,6 +46,16 @@ int main() {
             outfile.open("app/data/output.txt");
             outfile << circumfrence << endl;
             system("python3 app/lib/circexe.py < app/data/output.txt");
+        } else if (input1 == "pythag") {
+            string a,b;
+            cout << "What is a?: ";
+            cin >> a;
+            cout << "What is b?: ";
+            cin >> b;
+            ofstream outfile;
+            outfile.open("app/data/output.txt");
+            outfile << a << endl << b << endl;
+            system("python3 app/lib/pythagexe.py < app/data/output.txt");
         }
     }
 }
