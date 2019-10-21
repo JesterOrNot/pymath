@@ -56,6 +56,41 @@ int main() {
             outfile.open("app/data/output.txt");
             outfile << a << endl << b << endl;
             system("python3 app/lib/pythagexe.py < app/data/output.txt");
+        } else if(input1 == "area") {
+            cout << "Welcome to the area calculator from the geometry calculator! available calculators include area of circle(aoc), area of trapezoid(aoz), area of triangle(aotri)\n Which do you want?: ";
+            string input2;
+            cin >> input2;
+            if (input2 == "aoc") {
+                string radius;
+                cout << "What is the radius?: ";
+                cin >> radius;
+                ofstream outfile;
+                outfile.open("app/data/output.txt");
+                outfile << radius << endl;
+                system("python3 app/lib/aocexe.py < app/data/output.txt");
+            } else if (input2 == "aoz")  {
+                string a,b,h;
+                cout << "What is a?: ";
+                cin >> a;
+                cout << "What is b?: ";
+                cin >> b;
+                cout << "What's the height?: ";
+                cin >> h;
+                ofstream outfile;
+                outfile.open("app/data/output.txt");
+                outfile << a << endl << b << endl << h << endl;
+                system("python3 app/lib/aozexe.py < app/data/output.txt");
+            } else if (input2 == "aotri") {
+                string b,h;
+                cout << "What is the base?: ";
+                cin >> b;
+                cout << "What is the height?: ";
+                cin >> h;
+                ofstream outfile;
+                outfile.open("app/data/output.txt");
+                outfile << b << endl << h << endl;
+                system("python3 app/lib/aotriexe.py < app/data/output.txt");
+            }
         }
     }
 }
