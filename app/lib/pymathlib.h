@@ -133,6 +133,18 @@ namespace pymath {
             outfile.open("app/data/output.txt");
             outfile << distance << endl << time << endl;
             system("python3 app/lib/speedexe.py < app/data/output.txt");
+        } else if (input == "tangacc") {
+            string radius,time,cycles;
+            cout << "What is the radius?: ";
+            cin >> radius;
+            cout << "What is the time?: ";
+            cin >> time;
+            cout << "How many cycles are there?: ";
+            cin >> cycles;
+            ofstream outfile;
+            outfile.open("app/data/output.txt");
+            outfile << radius << endl << time << endl << cycles << endl;
+            system("python3 app/lib/tanaccexe.py < app/data/output.txt");
         }
     }
 }
