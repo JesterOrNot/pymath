@@ -109,6 +109,20 @@ namespace pymath {
             outfile.open("app/data/output.txt");
             outfile << v1 << endl << v2 << endl << t1 << endl << t2 << endl;
             system("python3 app/lib/accexe.py < app/data/output.txt");
+        } else if (input == "disp") {
+            string initdis,findis,initime,fintime;
+            cout << "What is the initial displacement?: ";
+            cin >> initdis;
+            cout << "What is the final displacement?: ";
+            cin >> findis;
+            cout << "What is the initial time?: ";
+            cin >> initime;
+            cout << "What is the final time?: ";
+            cin >> fintime;
+            ofstream outfile;
+            outfile.open("app/data/output.txt");
+            outfile << initdis << endl << findis << endl << initime << endl << fintime << endl;
+            system("python3 app/lib/displexe.py < app/data/output.txt");
         }
     }
 }
