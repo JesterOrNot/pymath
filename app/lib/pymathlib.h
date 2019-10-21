@@ -123,6 +123,16 @@ namespace pymath {
             outfile.open("app/data/output.txt");
             outfile << initdis << endl << findis << endl << initime << endl << fintime << endl;
             system("python3 app/lib/displexe.py < app/data/output.txt");
+        } else if (input == "speed") {
+            string distance,time;
+            cout << "What is the distance?: ";
+            cin >> distance;
+            cout << "What is the time?: ";
+            cin >> time;
+            ofstream outfile;
+            outfile.open("app/data/output.txt");
+            outfile << distance << endl << time << endl;
+            system("python3 app/lib/speedexe.py < app/data/output.txt");
         }
     }
 }
