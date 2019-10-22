@@ -169,4 +169,7 @@ namespace pymath {
             system("python3 app/lib/tanspeedexe.py < app/data/output.txt");
         }
     }
+    void chemistry() {
+        //WIP
+    }
 }

@@ -10,5 +10,7 @@ int main() {
         pymath::geometry();
     } else if (input == "physics") {
         pymath::physics();
+    } else if (input == "chemistry") {
+        pymath::chemistry();
     }
 }
