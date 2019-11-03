@@ -19,6 +19,6 @@ jobs:
         pip install -r requirements.txt
         pip install codecov pytest
         python setup.py install
-    - name: Test with pytest
+    - name: Test with coverage
       run: |
-        codecov
+        coverage run tests/test.py
