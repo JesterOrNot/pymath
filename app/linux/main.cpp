@@ -1,4 +1,4 @@
-#include "lib/pymathlib.h"
+#include "../lib/pymathlib.h"
 using namespace std;
 int main() {
     string input;
