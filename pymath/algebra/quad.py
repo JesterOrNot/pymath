@@ -4,6 +4,12 @@ import math
 
 def quad(a, b, c):
     '''This does the computing'''
-    x_int_1 = (-b + math.sqrt(b**2-4*a*c))/2*a
-    x_int_2 = (-b - math.sqrt(b**2-4*a*c))/2*a
+    try:
+        x_int_1 = (-b + math.sqrt(b**2-4*a*c))/2*a
+    except:
+        x_int_1 = None
+    try:
+        x_int_2 = (-b - math.sqrt(b**2-4*a*c))/2*a
+    except:
+        x_int_2 = None
     return x_int_1, x_int_2
