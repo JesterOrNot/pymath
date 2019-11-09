@@ -4,6 +4,7 @@ from pymath.algebra import quad as quad
 from pymath.geometry import circumference as circumference
 import unittest
 
+
 class TestGeom(unittest.TestCase):
     def test_circ(self):
         self.assertEqual(circumference(5), 15.707963267948966)
@@ -20,7 +21,7 @@ def test_quad():
     """Tests pymath.algebra.quad."""
     assert quad(1, 3, 2) == (-1.0, -2.0), "Should be (-1.0, -2.0)"
     assert quad(1, 3, -4) == (1.0, -4.0), "Should be (1.0, -4.0)"
-    assert quad(2, 4, -6) == (4.0, -12.0), "Should be (4.0, -12.0)" 
+    assert quad(2, 4, -6) == (4.0, -12.0), "Should be (4.0, -12.0)"
 
 
 if __name__ == "__main__":
