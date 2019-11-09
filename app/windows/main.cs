@@ -15,6 +15,7 @@ namespace app {
         }
         public static void physics() {
             Console.Write("Welcome to the physics portion of pymath! available calculators include acceleration calc(acc), displacement calculator(disp), speed calc(speed), tangental acceleration calc(tangacc), velocity calc (velocity), tangental speed calc(tanspeed)\nWhich do you want?: ");
+            input = Console.ReadLine();
         }
         public static void chemistry() {
             // WIP
