@@ -8,6 +8,7 @@ namespace app
         {
             Console.Write("Welcome to pymath available calculators include algebra, chemistry, geometry, physics\nWhich do you want?: ");
             string input = Console.ReadLine();
+            algebra();
         }
         public static void algebra()
         {
@@ -15,7 +16,13 @@ namespace app
             string input = Console.ReadLine();
             if (input == "log")
             {
-                ExecuteSysCmd("python3","app/lib/logexe.py");
+                Console.Write("What is the base?: ");
+                string theBase = Console.ReadLine();
+                Console.Write("What is the result?: ");
+                string result = Console.ReadLine();
+                string[] lines = {theBase, result};
+                System.IO.File.WriteAllLines(@"app/data/output.txt", lines);
+                ExecuteSysCmd("/usr/bin/python3","app/lib/logexe.py < app/data/output.txt");
             }
         }
         public static void geometry()
