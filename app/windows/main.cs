@@ -20,9 +20,9 @@ namespace app
                 string theBase = Console.ReadLine();
                 Console.Write("What is the result?: ");
                 string result = Console.ReadLine();
-                string[] lines = {theBase, result};
+                string[] lines = { theBase, result };
                 System.IO.File.WriteAllLines(@"app/data/output.txt", lines);
-                ExecuteSysCmd("/usr/bin/python3","app/lib/logexe.py < app/data/output.txt");
+                ExecuteSysCmd("/usr/bin/python3", "app/lib/logexe.py < app/data/output.txt");
             }
         }
         public static void geometry()
