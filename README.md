@@ -9,7 +9,7 @@ import pymath
 ### Method 1
 ``` bash
 git clone https://github.com/JesterOrNot/pymath.git
-python3 setup.py Install
+python3 setup.py install
 ```
 ### Method 2
 ``` bash
