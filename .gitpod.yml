@@ -28,6 +28,7 @@ github:
 tasks:
   - init: python3 setup.py install
   - init: npm i -g bash-language-server
+  - init: pytest tests/test.py
 vscode:
   extensions:
     - ms-python.anaconda-extension-pack@1.0.1:zDfOOe7FoQk40SnrhxWS5g==
