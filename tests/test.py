@@ -2,6 +2,7 @@
 from pymath.algebra import log as log
 from pymath.algebra import quad as quad
 from pymath.geometry import circumference as circumference
+from pymath.geometry import pythag_theor
 import unittest
 
 
@@ -26,8 +27,14 @@ def test_quad():
                                 ), "Should be ((-1.5-1.6583123951777j), (-1.5-1.6583123951777j))"
 
 
+def test_pythag():
+    assert pythag_theor(
+        5, 3) == 5.830951894845301, "Should be 5.830951894845301"
+
+
 if __name__ == "__main__":
     test_log()
     test_quad()
+    test_pythag()
     unittest.main()
     print("Everything passed!")
