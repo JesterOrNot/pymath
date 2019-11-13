@@ -26,9 +26,12 @@ github:
     # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: true
 tasks:
-  - init: python3 setup.py install
-    prebuild: npm i -g bash-language-server
-    prebuild: pytest tests/test.py
+  - init: >
+      touch /tmp/.npm-lock &&
+      python3 setup.py install &&
+      rm /tmp/.npm-lock
+  command: npm i -g bash-language-server
+  - init: pytest tests/test.py
 vscode:
   extensions:
     - ms-python.anaconda-extension-pack@1.0.1:zDfOOe7FoQk40SnrhxWS5g==
