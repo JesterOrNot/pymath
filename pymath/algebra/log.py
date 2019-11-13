@@ -1,4 +1,4 @@
-"""Module for logs."""
+"""Module for logarithms."""
 
 
 def log(base, awnser):
