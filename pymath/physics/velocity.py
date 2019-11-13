@@ -1,3 +1,3 @@
 def velocity(time_interval, displacement):
-    v = displacement/time_interval
-    return v
+    velocity = displacement/time_interval
+    return velocity
