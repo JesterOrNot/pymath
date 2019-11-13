@@ -27,9 +27,10 @@ github:
         addLabel: true
 tasks:
     - init: >
+        npm i -g bash-language-server && 
         python3 setup.py install && 
-        pytest tests/test.py && 
-        npm i -g bash-language-server
+        pytest tests/test.py
+
 vscode:
     extensions:
         - ms-python.anaconda-extension-pack@1.0.1:zDfOOe7FoQk40SnrhxWS5g==
