@@ -2,29 +2,28 @@ from math import pi
 
 
 def tangental_acceleration(radius, time, cycles):
-    awns = (4 * pi**2 * radius) / (time / cycles)**2
-    return awns
+    return (4 * pi**2 * radius) / (time / cycles)**2
 
 
 def tangental_speed(radius, time, cycles):
-    awns = (2*pi*radius) / (time / cycles)
-    return awns
+    return (2*pi*radius) / (time / cycles)
+
 
 def velocity(time_interval, displacement):
-    velocity = displacement/time_interval
-    return velocity
+    return displacement/time_interval
 
 
 def speed(distanse, time):
-    equ = distanse / time
-    return equ
+    return distanse / time
 
 
 def acceleration(v1, v2, t1, t2):
-    acceleration = (v2 - v1)/(t2-t1)
-    return acceleration
+    return (v2 - v1)/(t2-t1)
 
 
 def displacement(initial_distance, final_distance, initial_time, final_time):
-    equation = (final_distance-initial_distance)/(final_time-initial_time)
-    return equation
+    return (final_distance-initial_distance)/(final_time-initial_time)
+
+
+def force(mass, acceleration):
+    return mass*acceleration
