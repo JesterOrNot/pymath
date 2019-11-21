@@ -1,5 +1,5 @@
-from pymath.physics import tangental_speed
+import pymath
 radius = float(input())
 time = float(input())
 cycles = float(input())
-print("tangental speed = {}".format(tangental_speed(radius, time, cycles)))
+print("tangental speed = {}".format(pymath.physics.tangental_speed(radius, time, cycles)))

@@ -1,3 +1,3 @@
-from pymath.geometry.area import area_of_circle
+import pymath
 circ = float(input())
-print("area = {}".format(area_of_circle(circ)))
+print("area = {}".format(pymath.geometry.area_of_circle(circ)))

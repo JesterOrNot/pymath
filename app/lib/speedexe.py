@@ -1,4 +1,4 @@
-from pymath.physics import speed
+import pymath
 d = float(input())
 t = float(input())
-print("speed = {}".format(speed(d,t)))
+print("speed = {}".format(pymath.physics.speed(d, t)))

@@ -1,5 +1,5 @@
-from pymath.algebra import quad as quad
+import pymath
 a = float(input())
 b = float(input())
 c = float(input())
-print("The awnser is: {}".format(quad(a, b, c)))
+print("The awnser is: {}".format(pymath.algebra.quad(a, b, c)))
