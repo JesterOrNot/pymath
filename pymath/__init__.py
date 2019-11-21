@@ -1,6 +1,5 @@
 """Main pymath module"""
 from pymath import algebra
-from pymath import chemistry
 from pymath import physics
 from pymath import geometry
 
