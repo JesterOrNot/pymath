@@ -1,4 +1,4 @@
-from pymath.physics import velocity
+import pymath
 disp = float(input())
 time = float(input())
-print("velocity = {}".format(velocity(disp, time)))
+print("velocity = {}".format(pymath.physics.velocity(disp, time)))

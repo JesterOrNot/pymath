@@ -1,6 +1,6 @@
-from pymath.physics import displacement
+import pymath
 ind = float(input())
 fid = float(input())
 it = float(input())
 ft = float(input())
-print("displacement = {}".format(displacement(ind, fid, it, ft)))
+print("displacement = {}".format(pymath.physics.displacement(ind, fid, it, ft)))
